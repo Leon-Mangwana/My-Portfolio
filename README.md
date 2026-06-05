@@ -4,7 +4,7 @@ A fast, modern, fully responsive personal portfolio built with **vanilla HTML, C
 
 ## ✨ Features
 
-- **Single-page design** with smooth-scroll navigation: Home · About · Skills · Projects · Education · Recognition · Contact
+- **Single-page design** with smooth-scroll navigation: Home · About · Skills · Projects · Recognition · Contact
 - **Dark / light theme** toggle (remembers your choice) — teal → indigo brand palette
 - **Animated hero** with a typing effect and your photo
 - **Featured project layout** with Live Demo + View Code links, ready for real repos
