@@ -1,70 +1,70 @@
-# Leon Mangwana — Portfolio Website
+# Leon Mangwana — Portfolio
 
-A fast, modern, fully responsive personal portfolio built with **vanilla HTML, CSS and JavaScript** — no frameworks, no build step. Just open it in a browser.
+A modern, animated developer portfolio built with **Tailwind CSS** and vanilla JavaScript. No build step required — it opens straight in a browser.
 
-## ✨ Features
+## ✨ Highlights
 
-- **Single-page design** with smooth-scroll navigation: Home · About · Skills · Projects · Recognition · Contact
-- **Dark / light theme** toggle (remembers your choice) — teal → indigo brand palette
-- **Animated hero** with a typing effect and your photo
-- **Featured project layout** with Live Demo + View Code links, ready for real repos
-- **Recognition section** — achievement highlights and reference testimonials
-- **Working contact form** (Formspree) with in-page sending + graceful email fallback
-- **Scroll-reveal animations**, animated stat counters, scroll progress bar and active-section highlighting
-- **Mobile-first responsive** layout with a slide-in menu
-- **SEO + social-share ready** (meta tags, Open Graph image)
-- **Accessible**: keyboard-friendly, reduced-motion aware, semantic HTML
+- **Tailwind CSS** (latest, via Play CDN) + a CSS-variable theming layer
+- **Animated aurora background**, mouse-follow spotlight and a moving grid
+- **Glassmorphism** navbar and cards
+- **Dark / light theme** toggle (remembers your choice)
+- **Typed hero headline**, animated gradient text, scroll-reveal, animated counters
+- **3D tilt** on skill & project cards, scrolling tech marquee, scroll-progress bar
+- **Featured project layout** with Live Demo + Code links
+- **Working contact form** (Formspree) with in-page sending + email fallback
+- **Fully responsive**, accessible, reduced-motion aware, SEO + social-share ready
 
 ## 📁 Structure
 
 ```
 portfolio/
-├── index.html          ← the page content
-├── css/styles.css      ← all styling + theming
-├── js/main.js          ← interactions
+├── index.html        ← markup + Tailwind config (inline)
+├── css/styles.css    ← theming variables + custom components
+├── js/main.js        ← all interactions
 ├── assets/
 │   ├── leon.jpg                 ← YOUR PHOTO  (add this)
-│   └── Leon_Mangwana_CV.pdf     ← YOUR CV     (add this)
+│   └── Leon_Mangwana_CV.pdf     ← YOUR RÉSUMÉ (add this)
 └── README.md
 ```
 
-## 🚀 How to use
+## 🚀 Run it
 
-1. **Add your two files** to the `assets/` folder (see `assets/README.txt`):
-   - `leon.jpg` — your professional photo
-   - `Leon_Mangwana_CV.pdf` — your CV
-2. **Preview locally** — just double-click `index.html`, or run a tiny server:
-   ```powershell
-   # from the portfolio folder
-   python -m http.server 8000
-   # then open http://localhost:8000
-   ```
+Just **double-click `index.html`** — Tailwind loads from the CDN automatically.
+For a local server (nicer for the form + fonts):
 
-## 🌍 Publish it for free (recommended: GitHub Pages)
+```powershell
+python -m http.server 8000   # then open http://localhost:8000
+```
 
-1. Create a new GitHub repo, e.g. `portfolio`.
-2. Upload all these files (including the `assets` folder with your photo + CV).
-3. Repo **Settings → Pages → Build from branch → `main` / root → Save**.
-4. Your site goes live at `https://leon-mangwana.github.io/portfolio/`.
+## 📌 The two files you need to add
 
-> Alternatives: drag-and-drop the folder onto **netlify.com/drop**, or import the repo on **vercel.com** — both give a free live URL in seconds.
+Put these in `assets/` with these exact names:
+1. **`leon.jpg`** — your photo (a vertical/portrait crop looks best). If it's missing, the hero shows a clean "LM" placeholder instead of breaking.
+2. **`Leon_Mangwana_CV.pdf`** — your résumé, for the download buttons.
+
+> File names are case-sensitive once hosted online — keep them exactly as above.
 
 ## 📨 Make the contact form send real emails (free, ~2 min)
 
-By default the form opens the visitor's email app. To receive messages in-page:
+1. Sign up at **[formspree.io](https://formspree.io)** with `K2Leony@gmail.com`.
+2. Create a form → copy its ID (looks like `xldggabc`).
+3. In `index.html`, replace `YOUR_FORM_ID` in `action="https://formspree.io/f/YOUR_FORM_ID"`.
 
-1. Sign up at **[formspree.io](https://formspree.io)** using `K2Leony@gmail.com`.
-2. Create a form → copy the form ID (looks like `xyzabcd`).
-3. In `index.html`, find `action="https://formspree.io/f/YOUR_FORM_ID"` and replace `YOUR_FORM_ID`.
+Until then, the form opens the visitor's email app as a fallback.
 
-That's it — submissions now land in your inbox without leaving the page.
+## 🌍 Publish it free
 
-## ✏️ Easy things to customise
+- **GitHub Pages**: push these files to a repo → Settings → Pages → deploy from `main`.
+- Or drag the folder onto **netlify.com/drop**, or import on **vercel.com**.
 
-- **Colours**: edit `--accent` / `--accent-2` at the top of `css/styles.css` (currently teal → indigo).
-- **Typing roles**: edit the `roles` array in `js/main.js`.
-- **Projects**: as you build real GitHub projects, update the `#projects` cards in `index.html` with live demo + repo links — that's what impresses hiring managers most. The first card is marked `project--featured`; follow the comment above the grid to add more.
-- **Project screenshots**: drop an image in `assets/` and swap the emoji in `.project__thumb` for `<img src="assets/your-shot.png" alt="…">`.
+> For best production performance you can later swap the Tailwind Play CDN for a real
+> Tailwind build (`npm create vite@latest` + `tailwindcss`), but the CDN is perfect for shipping today.
+
+## ✏️ Customise
+
+- **Colours / gradient**: edit the CSS variables and `--grad` at the top of `css/styles.css`.
+- **Typed roles**: edit the `roles` array in `js/main.js`.
+- **Projects**: follow the comment above the project grid in `index.html` to add real repos, live links and screenshots — that's what wins interviews.
 
 ---
-Built for Leon Mangwana · BSc (Hons) Computer Science, Midlands State University.
+Built by Leon Mangwana · Computer Science · Midlands State University.
