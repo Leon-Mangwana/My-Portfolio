@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leon Mangwana — Computer Science Student & Aspiring Software Engineer</title>
+  <meta name="description" content="Leon Mangwana — BSc (Hons) Computer Science student at Midlands State University. Software engineering, web development and database systems. Seeking a Work-Related Learning placement." />
+  <meta name="author" content="Leon Mangwana" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Leon Mangwana — Computer Science Student" />
+  <meta property="og:description" content="Aspiring software engineer seeking a Work-Related Learning placement. Java, Python, web & database development." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/leon.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='Arial' font-weight='bold' fill='%2314b8a6'>L</text></svg>" />
+</head>
+<body>
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__logo">Leon<span>.</span>M</a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#home" class="nav__link">Home</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#skills" class="nav__link">Skills</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#education" class="nav__link">Education</a>
+        <a href="#recognition" class="nav__link">Recognition</a>
+        <a href="#contact" class="nav__link">Contact</a>
+        <a href="assets/Leon_Mangwana_CV.pdf" class="btn btn--ghost nav__cv" download>Download CV</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark / light theme" title="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero section" id="home">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__text reveal">
+          <p class="hero__eyebrow"><span class="dot"></span> Available for Work-Related Learning placement</p>
+          <h1 class="hero__title">
+            Hi, I'm <span class="grad">Leon Mangwana</span>
+          </h1>
+          <h2 class="hero__role">
+            <span class="typed" id="typed"></span><span class="caret">|</span>
+          </h2>
+          <p class="hero__lead">
+            Third-year BSc (Honours) Computer Science student at Midlands State University.
+            I build clean, reliable web and database-driven applications — and I'm ready to
+            bring that energy to a real engineering team.
+          </p>
+          <div class="hero__cta">
+            <a href="#projects" class="btn btn--primary">View My Work</a>
+            <a href="#contact" class="btn btn--outline">Get In Touch</a>
+          </div>
+          <ul class="hero__socials">
+            <li><a href="https://github.com/Leon-Mangwana" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12 11.5 11.5 0 0 0 8.5 23c.6.1.8-.26.8-.57v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 .1.8 1.7 2.6 1.2.1-.7.4-1.2.7-1.5-2.5-.3-5.2-1.3-5.2-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C17 5 18 5.3 18 5.3c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.2 5.7.4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.57A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+            </a></li>
+            <li><a href="https://www.linkedin.com/in/leonmangwana" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+            </a></li>
+            <li><a href="mailto:K2Leony@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+            </a></li>
+          </ul>
+        </div>
+
+        <div class="hero__media reveal">
+          <div class="hero__photo-wrap">
+            <img src="assets/leon.jpg" alt="Portrait of Leon Mangwana" class="hero__photo" id="heroPhoto"
+                 onerror="this.classList.add('is-missing'); this.alt='Add your photo to assets/leon.jpg';" />
+            <div class="hero__photo-glow" aria-hidden="true"></div>
+          </div>
+          <div class="hero__badge hero__badge--1">&lt;/&gt; Java • Python</div>
+          <div class="hero__badge hero__badge--2">First-Class modules</div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ===== STATS STRIP ===== -->
+    <section class="stats section--tight">
+      <div class="container stats__grid">
+        <div class="stat reveal"><span class="stat__num" data-count="2024">2024</span><span class="stat__label">Started CS degree</span></div>
+        <div class="stat reveal"><span class="stat__num" data-count="7">0</span><span class="stat__label">First-Class modules</span></div>
+        <div class="stat reveal"><span class="stat__num" data-count="6">0</span><span class="stat__label">Languages & tools</span></div>
+        <div class="stat reveal"><span class="stat__num">100<span class="stat__suffix">%</span></span><span class="stat__label">Modules passed</span></div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="section__kicker reveal">01 — About</p>
+        <h2 class="section__title reveal">A motivated developer who ships</h2>
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p>
+              I'm <strong>Leon Mangwana</strong>, a third-year Computer Science student at
+              <strong>Midlands State University</strong> based in Gweru, Zimbabwe. I'm currently seeking a
+              <strong>one-year Work-Related Learning placement</strong> where I can apply what I've learned and
+              grow alongside experienced engineers.
+            </p>
+            <p>
+              My coursework spans <strong>software engineering, web development, database systems, data
+              structures &amp; algorithms, systems analysis and computer security</strong> — and I've passed
+              several of these at <strong>First-Class level</strong>. I genuinely enjoy turning a vague problem
+              into a clean, working solution, and I care about writing code that other people can read.
+            </p>
+            <p>
+              Beyond the technical side, I'm dependable, a fast learner, and comfortable working both
+              independently and in a team. Give me a problem and a deadline, and I'll meet you there.
+            </p>
+            <div class="about__chips">
+              <span class="chip">📍 Gweru, Zimbabwe</span>
+              <span class="chip">🎓 BSc (Hons) Computer Science</span>
+              <span class="chip">🗣️ English &amp; Shona</span>
+              <span class="chip">✅ Open to relocation</span>
+            </div>
+          </div>
+
+          <aside class="about__card reveal">
+            <h3>What I bring to your team</h3>
+            <ul class="about__list">
+              <li><span>🧩</span> Strong problem-solving &amp; analytical thinking</li>
+              <li><span>🤝</span> Reliable team player &amp; clear communicator</li>
+              <li><span>⚡</span> Fast learner — comfortable with new stacks</li>
+              <li><span>🔁</span> SDLC, requirements analysis &amp; testing</li>
+              <li><span>🎯</span> Attention to detail &amp; strong work ethic</li>
+            </ul>
+            <a href="#contact" class="btn btn--primary btn--block">Let's work together</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <p class="section__kicker reveal">02 — Skills</p>
+        <h2 class="section__title reveal">Tools &amp; technologies I work with</h2>
+
+        <div class="skills__grid">
+          <article class="skill-card reveal">
+            <div class="skill-card__icon">💻</div>
+            <h3>Programming</h3>
+            <p>Strong grounding in programming principles &amp; paradigms.</p>
+            <div class="tags"><span>Java</span><span>Python</span><span>OOP</span><span>Algorithms</span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card__icon">🌐</div>
+            <h3>Web Development</h3>
+            <p>Building &amp; maintaining dynamic, responsive web applications.</p>
+            <div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>PHP</span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card__icon">🗄️</div>
+            <h3>Databases</h3>
+            <p>Design, modelling, querying &amp; managing relational databases.</p>
+            <div class="tags"><span>SQL</span><span>MySQL</span><span>Normalisation</span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card__icon">🛠️</div>
+            <h3>Software Engineering</h3>
+            <p>Turning requirements into documented, tested solutions.</p>
+            <div class="tags"><span>SDLC</span><span>UML</span><span>Sys Analysis</span><span>Testing</span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card__icon">⚙️</div>
+            <h3>Systems &amp; Tools</h3>
+            <p>Day-to-day development workflow across platforms.</p>
+            <div class="tags"><span>Git/GitHub</span><span>Linux</span><span>Windows</span><span>MS Office</span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card__icon">🧠</div>
+            <h3>Foundations</h3>
+            <p>The computer-science core behind everything I build.</p>
+            <div class="tags"><span>Data Structures</span><span>OS</span><span>Architecture</span><span>Security</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="section__kicker reveal">03 — Projects</p>
+        <h2 class="section__title reveal">Things I've built &amp; studied</h2>
+        <p class="section__intro reveal">
+          A selection of academic projects and coursework. I'm actively adding more on
+          <a href="https://github.com/Leon-Mangwana" target="_blank" rel="noopener">GitHub</a> — check back soon.
+        </p>
+
+        <!--
+          ▶ HOW TO ADD A REAL PROJECT:
+            1. Copy one <article class="project"> block below.
+            2. Change the title, description and tags.
+            3. Put your live link in the "Live Demo" href, and your repo in the "Code" href.
+            4. (Optional) add a screenshot: replace <div class="project__thumb"> emoji with
+               <img src="assets/project-name.png" alt="...">  — it will fill the banner.
+            Featured projects (your best 1–2) get class="project project--featured".
+        -->
+        <div class="projects__grid">
+          <article class="project project--featured reveal">
+            <div class="project__thumb"><span>🌐</span></div>
+            <div class="project__body">
+              <span class="project__flag">Featured</span>
+              <h3>Responsive Web Application</h3>
+              <p>Designed and built a responsive, database-driven web application — focused on clean layout, usability and maintainable code.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span></div>
+              <div class="project__links">
+                <a class="project__link project__link--demo" href="#" target="_blank" rel="noopener">Live Demo ↗</a>
+                <a class="project__link" href="https://github.com/Leon-Mangwana" target="_blank" rel="noopener">View Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__thumb"><span>🗄️</span></div>
+            <div class="project__body">
+              <h3>Relational Database System</h3>
+              <p>Modelled, normalised and implemented a relational database, writing efficient SQL queries to retrieve and manage data.</p>
+              <div class="tags"><span>MySQL</span><span>SQL</span><span>ER Modelling</span></div>
+              <div class="project__links">
+                <a class="project__link project__link--demo" href="#" target="_blank" rel="noopener">Live Demo ↗</a>
+                <a class="project__link" href="https://github.com/Leon-Mangwana" target="_blank" rel="noopener">View Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__thumb"><span>📐</span></div>
+            <div class="project__body">
+              <h3>Software Design &amp; Analysis</h3>
+              <p>Applied the full SDLC and UML to gather requirements, design and document a complete software solution.</p>
+              <div class="tags"><span>UML</span><span>SDLC</span><span>Documentation</span></div>
+              <div class="project__links">
+                <a class="project__link" href="https://github.com/Leon-Mangwana" target="_blank" rel="noopener">View Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__thumb"><span>🧮</span></div>
+            <div class="project__body">
+              <h3>Data Structures &amp; Algorithms</h3>
+              <p>Implemented core data structures and algorithms in Java, with a focus on efficiency and clean problem-solving.</p>
+              <div class="tags"><span>Java</span><span>Algorithms</span><span>Efficiency</span></div>
+              <div class="project__links">
+                <a class="project__link" href="https://github.com/Leon-Mangwana" target="_blank" rel="noopener">View Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION / TIMELINE ===== -->
+    <section class="section section--alt" id="education">
+      <div class="container">
+        <p class="section__kicker reveal">04 — Education</p>
+        <h2 class="section__title reveal">Academic journey</h2>
+
+        <div class="timeline">
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2024 — Present</span>
+              <h3>BSc (Honours) Computer Science</h3>
+              <p class="timeline__org">Midlands State University, Gweru</p>
+              <p>4-year programme · Year 3, currently on Work-Related Learning. Multiple modules passed at First-Class level across programming, data structures, databases and systems analysis.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2022</span>
+              <h3>ZIMSEC Advanced Level</h3>
+              <p class="timeline__org">Oakdale Senior School</p>
+              <p>Pure Mathematics (A) · Chemistry (C) · Physics (E)</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2020</span>
+              <h3>ZIMSEC Ordinary Level</h3>
+              <p class="timeline__org">Chibuwe Secondary School</p>
+              <p>9 subjects passed (all C or better), including Mathematics, English, Combined Science, Physics, Chemistry and Biology.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Academic highlights -->
+        <h3 class="subsection-title reveal">First-Class highlights</h3>
+        <div class="grades reveal">
+          <span class="grade">Data Structures &amp; Algorithms</span>
+          <span class="grade">Systems Analysis &amp; Design</span>
+          <span class="grade">Intro to Computers &amp; Applications</span>
+          <span class="grade">Digital Electronics</span>
+          <span class="grade">Discrete Mathematics</span>
+          <span class="grade">Physics for Engineers</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ACHIEVEMENTS & REFERENCES ===== -->
+    <section class="section" id="recognition">
+      <div class="container">
+        <p class="section__kicker reveal">05 — Recognition</p>
+        <h2 class="section__title reveal">Achievements &amp; references</h2>
+
+        <div class="awards reveal">
+          <div class="award">
+            <span class="award__num">7</span>
+            <span class="award__txt">Modules passed at <strong>First-Class</strong> level</span>
+          </div>
+          <div class="award">
+            <span class="award__num">A</span>
+            <span class="award__txt">Pure Mathematics at <strong>A-Level</strong></span>
+          </div>
+          <div class="award">
+            <span class="award__num">100%</span>
+            <span class="award__txt">University modules <strong>passed</strong> to date</span>
+          </div>
+          <div class="award">
+            <span class="award__num">1<sup>st</sup></span>
+            <span class="award__txt">in Data Structures, Sys. Analysis &amp; more</span>
+          </div>
+        </div>
+
+        <h3 class="subsection-title reveal">What my referees say</h3>
+        <div class="refs">
+          <figure class="ref reveal">
+            <blockquote>"Leon is requested for Work-Related Learning on the strength of his academic foundation — we believe he has acquired enough theory to contribute in a multi-operational organisation."</blockquote>
+            <figcaption>
+              <span class="ref__name">Mrs N. Sarai</span>
+              <span class="ref__role">Chairperson, Dept. of Computer Science · Midlands State University</span>
+              <a class="ref__contact" href="mailto:sarain@staff.msu.ac.zw">sarain@staff.msu.ac.zw</a>
+            </figcaption>
+          </figure>
+
+          <figure class="ref reveal">
+            <blockquote>"We hope the placement will develop in Leon resilience and consistency in the face of challenges — and that your organisation will gain from a capable, theory-ready student."</blockquote>
+            <figcaption>
+              <span class="ref__name">Mr T. Mzikamwi</span>
+              <span class="ref__role">Work-Related Learning Coordinator · Midlands State University</span>
+              <a class="ref__contact" href="mailto:mzikamwit@staff.msu.ac.zw">mzikamwit@staff.msu.ac.zw</a>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <div class="contact reveal">
+          <p class="section__kicker">06 — Contact</p>
+          <h2 class="section__title">Let's build something together</h2>
+          <p class="contact__lead">
+            I'm actively looking for a Work-Related Learning placement and would love to hear from you.
+            Whether it's an opportunity, a question or just a hello — my inbox is always open.
+          </p>
+
+          <div class="contact__grid">
+            <a class="contact__card" href="mailto:K2Leony@gmail.com">
+              <span class="contact__ico">✉️</span>
+              <span class="contact__k">Email</span>
+              <span class="contact__v">K2Leony@gmail.com</span>
+            </a>
+            <a class="contact__card" href="tel:+263780934829">
+              <span class="contact__ico">📞</span>
+              <span class="contact__k">Phone</span>
+              <span class="contact__v">+263 78 093 4829</span>
+            </a>
+            <a class="contact__card" href="https://www.linkedin.com/in/leonmangwana" target="_blank" rel="noopener">
+              <span class="contact__ico">💼</span>
+              <span class="contact__k">LinkedIn</span>
+              <span class="contact__v">in/leonmangwana</span>
+            </a>
+            <a class="contact__card" href="https://github.com/Leon-Mangwana" target="_blank" rel="noopener">
+              <span class="contact__ico">🐙</span>
+              <span class="contact__k">GitHub</span>
+              <span class="contact__v">Leon-Mangwana</span>
+            </a>
+          </div>
+
+          <!--
+            ▶ TO MAKE THIS FORM SEND REAL EMAILS (free, 2 minutes):
+              1. Go to https://formspree.io and sign up with K2Leony@gmail.com
+              2. Create a new form — copy the form ID it gives you (looks like "xyzabcd").
+              3. Replace YOUR_FORM_ID below with that ID.
+            Until then, the form falls back to opening the visitor's email app.
+          -->
+          <form class="contact__form reveal" id="contactForm"
+                action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form__row">
+              <div class="field">
+                <label for="cf-name">Name</label>
+                <input type="text" id="cf-name" name="name" placeholder="Your name" required />
+              </div>
+              <div class="field">
+                <label for="cf-email">Email</label>
+                <input type="email" id="cf-email" name="email" placeholder="you@company.com" required />
+              </div>
+            </div>
+            <div class="field">
+              <label for="cf-subject">Subject</label>
+              <input type="text" id="cf-subject" name="subject" placeholder="Placement opportunity" />
+            </div>
+            <div class="field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5" placeholder="Tell me a little about the role…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg btn--block" id="cfSubmit">Send Message</button>
+            <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="contact__cta">
+            <a href="mailto:K2Leony@gmail.com?subject=Work-Related%20Learning%20Placement%20Opportunity" class="btn btn--outline btn--lg">Or email me directly</a>
+            <a href="assets/Leon_Mangwana_CV.pdf" class="btn btn--outline btn--lg" download>Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Leon Mangwana — Built with care &amp; vanilla code.</p>
+      <a href="#home" class="footer__top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
